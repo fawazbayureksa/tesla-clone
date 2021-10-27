@@ -9,3 +9,9 @@ npx create-react-app tesla-clone --template redux
 ```
 cd tesla-clone
 ```
+
+Setelah membuat component Home dan header ketikkan ini di terminal untuk menambah style
+
+```
+yarn add styled-components
+```
