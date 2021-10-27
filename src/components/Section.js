@@ -1,22 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
-function Section() {
+function Section({title,description,leftBtnText,RightBtnText,backgroundImg}) {
+    console.log(backgroundImg)
     return (
-        <Wrap>
+        <Wrap bgImage={backgroundImg}>
             <ItemText>
                 <h1>
-                    Model S
+                    {title}
                 </h1>
-                <p>Order Online for Touchless Delivery</p>
+                <p>{description}</p>
             </ItemText>
 
             <Buttons>
                 <ButtonGroup>
                     <LeftButton>
-                        CUSTOM ORDER
+                        {leftBtnText}
                     </LeftButton>
                     <RightButton>
-                        EXISTING INVENTORY
+                        {RightBtnText}
                     </RightButton>
                 </ButtonGroup>
                 <DownArrow src="images/down-arrow.svg" />
@@ -32,7 +33,7 @@ export default Section
 const Wrap = styled.div`
     width:100vw;
     height:100vh;
-    background-image : url('/images/model-s.jpg');
+    background-image : url('/images/model-s.jpg'); 
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -40,6 +41,7 @@ const Wrap = styled.div`
     flex-direction:column;
     justify-content:space-between; //Vertical
     align-items:center; //horizontal
+    background-image : ${props => 'url("/images/${props.bgImage}")' }; 
 `
 
 const ItemText = styled.div`
