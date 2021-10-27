@@ -9,15 +9,18 @@ function Section() {
                 </h1>
                 <p>Order Online for Touchless Delivery</p>
             </ItemText>
-            <ButtonGroup>
-                <LeftButton>
-                    CUSTOM ORDER
-                </LeftButton>
-                <RightButton>
-                    EXISTING INVENTORY
-                </RightButton>
-            </ButtonGroup>
-            <DownArrow src="images/down-arrow.svg" />
+
+            <Buttons>
+                <ButtonGroup>
+                    <LeftButton>
+                        CUSTOM ORDER
+                    </LeftButton>
+                    <RightButton>
+                        EXISTING INVENTORY
+                    </RightButton>
+                </ButtonGroup>
+                <DownArrow src="images/down-arrow.svg" />
+            </Buttons>
 
 
         </Wrap>
@@ -47,6 +50,9 @@ const ItemText = styled.div`
 const ButtonGroup = styled.div`
     display:flex;
     margin-bottom:30px;
+    @media(max-width:768px){
+        flex-direction:column;
+    }
     
 
 `
@@ -63,17 +69,20 @@ const LeftButton = styled.div`
     text-transform:uppercase;
     font-size:12px;
     cursor:pointer; 
+    margin:8px;
 `
 
 const RightButton = styled(LeftButton)`
 
     background-color:#eee;
     color:#333;
-  
 
 `
 const DownArrow = styled.img`
-    margin-top:20px;
     height:40px;
+    overflow-x:hidden;
+    animation:animateDown infinite 1.5s;
+`
+const Buttons = styled.div`
 
 `
