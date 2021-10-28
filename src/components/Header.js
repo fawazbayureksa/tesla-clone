@@ -31,11 +31,11 @@ function Header() {
             <RightMenu>
                 <a href="#">Shop</a>
                 <a href="#">Account</a>
-                <a href="#" >Menu</a>
+                <a href="#" onClick={()=>setBurgerStatus(true)} >Menu</a>
             </RightMenu>
             <BurgerNav show={burgerStatus}>
                 <CloseWrapper>
-                    <CustomClose />
+                    <CustomClose onClick={()=>setBurgerStatus(false)}/>
                 </CloseWrapper>
                 <li><a href="">Existing Inventory</a></li>
                 <li><a href="">Used Inventory</a></li>
@@ -123,8 +123,10 @@ const BurgerNav = styled.div`
     text-align:start;
     justify-content:space-between;
     padding:20px;
+    transition:transform 0.3s ease-in;
     transform: ${props => props.show ? 'translateX(0)': 'translateX(100%)'} //Jika menu tidak di tekan maka Nav nya tidak mucul
-`
+   
+    `
 
 const CustomClose = styled(CloseIcon)`
     cursor:pointer;
