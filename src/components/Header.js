@@ -65,6 +65,10 @@ const Menu = styled.div`
         flex-wrap:no-wrap;
 
     }
+    @media(max-width:768px){
+        display:none;
+
+    }
 `
 const RightMenu =styled.div`
     display:flex;
