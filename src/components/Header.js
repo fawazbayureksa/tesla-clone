@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+
 function Header() {
     return (
         <Container>
@@ -29,8 +30,8 @@ function Header() {
             </Menu>
             <RightMenu>
                 <a href="#">Shop</a>
-                <a href="#">Testla Account</a>
-                <a href="#"></a>
+                <a href="#">Account</a>
+                <a href="#" >Menu</a>
             </RightMenu>
         </Container>
     )
@@ -48,6 +49,9 @@ const Container = styled.div`
     top:0;
     left:0;
     right:0;
+    a{
+        font-size:14px;
+    }
 `
 const Menu = styled.div`
     display:flex;
@@ -63,10 +67,14 @@ const Menu = styled.div`
     }
 `
 const RightMenu =styled.div`
+    display:flex;
+    align-items:center;
 a{
+
     font-weight:600;
     text-transform:uppercase; // Membuat semua huruf menjadi Kapital
     margin-right:10px;
 
 }
 `
+
