@@ -34,6 +34,22 @@ function Header() {
                 <a href="#">Account</a>
                 <a href="#" >Menu</a>
             </RightMenu>
+            <BurgerNav>
+                <li><a href="">Existing Inventory</a></li>
+                <li><a href="">Used Inventory</a></li>
+                <li><a href="">Trade-In</a></li>
+                <li><a href="">Test Drive</a></li>
+                <li><a href="">Cybertruck</a></li>
+                <li><a href="">Roadster</a></li>
+                <li><a href="">Semi</a></li>
+                <li><a href="">Charging</a></li>
+                <li><a href="">Powerwall</a></li>
+                <li><a href="">Commercial Energy</a></li>
+                <li><a href="">Utilities</a></li>
+                <li><a href="">Find Us</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="">Investor Relations</a></li>
+            </BurgerNav>
         </Container>
     )
 }
@@ -41,6 +57,7 @@ function Header() {
 export default Header
 
 const Container = styled.div`
+    z-index:1;
     min-height:60px;
     position:fixed; //Agar navbar selalu diatas
     display:flex;
@@ -82,4 +99,15 @@ a{
 
 }
 `
-
+const BurgerNav = styled.div`
+    // display:none;
+    position:fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    background-color:#ffffff;
+    li{
+    }
+    width:295px;
+    z-index:16;
+`

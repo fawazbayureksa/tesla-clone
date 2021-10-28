@@ -12,8 +12,9 @@ function Section({title,description,leftBtnText,RightBtnText,backgroundImg}) {
                 </h1>
                 <p>{description}</p>
             </ItemText>
-
+            </Fade>
             <Buttons>
+            <Fade bottom>
                 <ButtonGroup>
                     <LeftButton>
                         {leftBtnText}
@@ -25,9 +26,9 @@ function Section({title,description,leftBtnText,RightBtnText,backgroundImg}) {
                     </RightButton>
                     }
                 </ButtonGroup>
+            </Fade>
                 <DownArrow src="images/down-arrow.svg" />
             </Buttons>
-        </Fade>
         </Wrap>
     )
 }
@@ -36,6 +37,7 @@ function Section({title,description,leftBtnText,RightBtnText,backgroundImg}) {
 export default Section
 
 const Wrap = styled.div`
+    z-index:10;
     width:100vw;
     height:100vh;
     background-image : url('/images/model-s.jpg'); 
@@ -51,6 +53,7 @@ const Wrap = styled.div`
 const ItemText = styled.div`
     padding-top:15vh;
     text-align:Center;
+    z-index:-1;
 
 `
 const ButtonGroup = styled.div`
