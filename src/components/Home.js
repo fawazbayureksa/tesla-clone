@@ -41,10 +41,17 @@ function Home() {
             />
             <Section 
                  title="Solar Roof"
-                 description = "Produce Clean"
-                 backgroundImg="solar-panel.jpg"
+                 description = "Produce Clean Energy From Your Roof"
+                 backgroundImg="solar-roof.jpg"
                  leftBtnText="Order Now"
                  RightBtnText="Learn More"
+            />
+            <Section 
+                 title="Accessories"
+                //  description = "Produce Clean Energy From Your Roof"
+                 backgroundImg="Accessories.jpg"
+                 leftBtnText="Shop Now"
+                //  RightBtnText="Learn More"
             />
 
         </Container>
