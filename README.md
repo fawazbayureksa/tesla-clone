@@ -16,3 +16,8 @@ Setelah membuat component Home dan header ketikkan ini di terminal untuk menamba
 yarn add styled-components
 ```
 
+React -Reveal untuk animasi scroll 
+
+```
+npm install react-reveal --save
+```
