@@ -27,6 +27,11 @@ function Header() {
                     <a href="#">Solar Panels</a>
                 </p>
             </Menu>
+            <RightMenu>
+                <a href="#">Shop</a>
+                <a href="#">Testla Account</a>
+                <a href="#"></a>
+            </RightMenu>
         </Container>
     )
 }
@@ -40,13 +45,29 @@ const Container = styled.div`
     align-items:center;
     padding:0 20px;
     justify-content:space-between;
+    top:0;
+    left:0;
+    right:0;
 `
 const Menu = styled.div`
     display:flex;
     align-items:center;
-
-    p{
+    flex:1;
+    justify-content:center;
+    a{
         font-weight:600;
         text-transform:uppercase; // Membuat semua huruf menjadi Kapital
+        padding:0 10px;
+        flex-wrap:no-wrap;
+
     }
+`
+const RightMenu =styled.div`
+a{
+    font-weight:600;
+    text-transform:uppercase; // Membuat semua huruf menjadi Kapital
+    padding:0 10px;
+    flex-wrap:no-wrap;
+
+}
 `
