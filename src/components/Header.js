@@ -66,8 +66,7 @@ const RightMenu =styled.div`
 a{
     font-weight:600;
     text-transform:uppercase; // Membuat semua huruf menjadi Kapital
-    padding:0 10px;
-    flex-wrap:no-wrap;
+    margin-right:10px;
 
 }
 `
