@@ -16,9 +16,3 @@ Setelah membuat component Home dan header ketikkan ini di terminal untuk menamba
 yarn add styled-components
 ```
 
-Menambahkan material icons 
-
-```
-yarn add @material-ui/core 
-yarn add @mui/icons-material
-```
