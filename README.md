@@ -16,6 +16,13 @@ Setelah membuat component Home dan header ketikkan ini di terminal untuk menamba
 yarn add styled-components
 ```
 
+Menambahkan icon Mui 
+
+```
+yarn add @mui/material @emotion/react @emotion/styled
+yarn add @mui/material @mui/styled-engine-sc styled-components
+```
+
 React -Reveal untuk animasi scroll 
 
 ```

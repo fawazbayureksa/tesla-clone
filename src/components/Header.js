@@ -1,9 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
-
-
-
+import CloseIcon from '@mui/icons-material/Close';
 function Header() {
+    const [burgerStatus,setBurgerStatus] = useState(false);
     return (
         <Container>
             <a>
@@ -34,7 +33,10 @@ function Header() {
                 <a href="#">Account</a>
                 <a href="#" >Menu</a>
             </RightMenu>
-            <BurgerNav>
+            <BurgerNav show={burgerStatus}>
+                <CloseWrapper>
+                    <CustomClose />
+                </CloseWrapper>
                 <li><a href="">Existing Inventory</a></li>
                 <li><a href="">Used Inventory</a></li>
                 <li><a href="">Trade-In</a></li>
@@ -106,8 +108,28 @@ const BurgerNav = styled.div`
     bottom:0;
     right:0;
     background-color:#ffffff;
+    margin-left:50px;
     li{
+        list-style:none; //Menghilangkan garis datar pada <list>
+        padding:15px 0;
     }
     width:295px;
     z-index:16;
+    font-size:18px;
+    font-weight:600;
+    color:#95979a;
+    display:flex;
+    flex-direction:column;
+    text-align:start;
+    justify-content:space-between;
+    padding:20px;
+    transform: ${props => props.show ? 'translateX(0)': 'translateX(100%)'} //Jika menu tidak di tekan maka Nav nya tidak mucul
+`
+
+const CustomClose = styled(CloseIcon)`
+    cursor:pointer;
+`
+const CloseWrapper = styled.div`
+    display:flex;
+    Justify-Content: flex-end;
 `
