@@ -6,7 +6,7 @@ const initialState = {
 
 }
 const carSlice = createSlice({
-    name ="car",
+    name :"car",
     initialState,
     reducers:{}
 

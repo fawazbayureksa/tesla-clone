@@ -1,14 +1,21 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
-import CloseIcon from '@mui/icons-material/Close';
+import CloseIcon from '@mui/icons-material/Close'
+import {selectCars} from '../features/car/carSlice'
+import {useSelector} from 'react-redux'
 function Header() {
     const [burgerStatus,setBurgerStatus] = useState(false);
+    const cars = useSelector(selectCars);
+    console.log(cars);
     return (
         <Container>
             <a>
                 <img src="/images/logo.svg" Alt="Logo Tesla"/>
             </a>
             <Menu>
+                {cars && cars.map((car,index)=>
+                    
+                )}
                 <p>
                     <a href="#">Model S</a>
                 </p>
