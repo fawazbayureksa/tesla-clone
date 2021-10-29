@@ -1,23 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
-function footer() {
+function Footer() {
     return (
-        <div>
+        <Container>
             <FooterText>
-                <a href="">Fawwaz 2021</a>
-                <a href="">Privacy</a>
-                <a href="">Contact</a>
-                <a href="">Careers</a>
-                <a href="">News</a>
-                <a href="">Engage</a>
-                <a href="">Location</a>
+ 
             </FooterText>
-        </div>
+        </Container>
     )
 }
 
-export default footer
+export default Footer
 
+const Container = styled.div`
+
+
+`
 const FooterText = styled.div`
 
 `
