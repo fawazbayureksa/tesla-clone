@@ -6,34 +6,18 @@ import {useSelector} from 'react-redux'
 function Header() {
     const [burgerStatus,setBurgerStatus] = useState(false);
     const cars = useSelector(selectCars);
-    console.log(cars);
+
     return (
         <Container>
             <a>
                 <img src="/images/logo.svg" Alt="Logo Tesla"/>
             </a>
             <Menu>
-                {cars && cars.map((car,index)=>
-                    
-                )}
+                {cars && cars.map((car,index)=>(
                 <p>
-                    <a href="#">Model S</a>
+                    <a key={index} href="#">{car}</a>
                 </p>
-                <p>
-                    <a href="#">Model 3</a>
-                </p>
-                <p>
-                    <a href="#">Model X</a>
-                </p>
-                <p>
-                    <a href="#">Model Y</a>
-                </p>
-                <p>
-                    <a href="#">Solar Roof</a>
-                </p>
-                <p>
-                    <a href="#">Solar Panels</a>
-                </p>
+                ))}
             </Menu>
             <RightMenu>
                 <a href="#">Shop</a>
