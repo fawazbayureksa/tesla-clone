@@ -40,7 +40,6 @@ const Wrap = styled.div`
     z-index:10;
     width:100vw;
     height:100vh;
-    background-image : url('/images/model-s.jpg'); 
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;

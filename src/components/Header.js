@@ -72,6 +72,7 @@ const Container = styled.div`
     a{
         font-size:14px;
     }
+
 `
 const Menu = styled.div`
     display:flex;
@@ -102,7 +103,6 @@ a{
 }
 `
 const BurgerNav = styled.div`
-    // display:none;
     position:fixed;
     top:0;
     bottom:0;
@@ -124,8 +124,8 @@ const BurgerNav = styled.div`
     justify-content:space-between;
     padding:20px;
     transition:transform 0.3s ease-in;
+    overflow-y:scroll;
     transform: ${props => props.show ? 'translateX(0)': 'translateX(100%)'} //Jika menu tidak di tekan maka Nav nya tidak mucul
-   
     `
 
 const CustomClose = styled(CloseIcon)`
