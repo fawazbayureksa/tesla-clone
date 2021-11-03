@@ -28,3 +28,11 @@ React -Reveal untuk animasi scroll
 ```
 yarn add react-reveal
 ```
+
+Cara Hosting React :
+
+ - Buka file package.json untuk menambahkan homepage di bawah private
+ - contoh : "homepage": "https://tesla-clone.epizy.com"
+ - next jalankan pada terminal
+
+
