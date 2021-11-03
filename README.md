@@ -35,4 +35,8 @@ Cara Hosting React :
  - contoh : "homepage": "https://tesla-clone.epizy.com"
  - next jalankan pada terminal
 
+ ```
+npm run-script build
+ ```
 
+ - Upload file yang ada dalam folder ke CP hosting 
