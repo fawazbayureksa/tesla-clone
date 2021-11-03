@@ -39,4 +39,4 @@ Cara Hosting React :
 npm run-script build
  ```
 
- - Upload file yang ada dalam folder ke CP hosting 
+ - Upload file yang ada dalam folder build ke CP hosting 
